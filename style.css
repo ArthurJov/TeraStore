@@ -1,0 +1,480 @@
+/* Importação de fonte externa */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Estilos gerais */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background: linear-gradient(180deg, #000000, rgba(0, 0, 0, 0) 100%);
+    height: 60px;
+    text-align: center;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    scroll-behavior: smooth;
+}
+
+#nav-icon{
+    font-size: 25px;
+    color: #cecece;
+    transition: .3s;
+}
+
+#sidebar-active{
+    display: none;
+}
+
+.open-sidebar-button, .close-sidebar-button{
+    display: none;
+    padding: 0 20px;
+}
+
+@media(max-width: 450px){
+    .links-container{
+        display: none;
+    }
+
+    ul{
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 10;
+        width: 300px;
+        height: 100vh;
+        background-color: #202020;
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; 
+    }
+
+    #icon, #lupa{
+        display: none;
+    }
+
+    li{
+        margin-left: 20px;
+        margin-block: 30px;
+    }
+
+    a.navtxt{
+        padding: 30px;
+    }
+
+    .open-sidebar-button, .close-sidebar-button{
+        display: block;
+    }
+
+    #nav-icon{
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        padding: 30px;
+    }
+
+    #sidebar-active:checked ~ .links-container{
+        display: flex;
+    }
+}
+
+#fire{
+    width: 30px; 
+    height: 30px; 
+    margin-bottom: 0px;
+    margin-bottom: -2px;
+    animation-duration: .2s;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+/* Estilos de link */
+a {
+    padding: 0px 10px 0px 10px;
+    transition: .3s;
+    color: #cecece;
+    padding-block: 15px;
+}
+
+/* Estilos de ícone */
+#icon {
+    font-size: 30px;
+    transition: .3s;
+    color: #cecece;
+}
+
+#lupa {
+    color: #cecece;
+    transition: 0.3s;
+}
+
+#lupa:hover {
+    color: #ffffff;
+}
+
+#icon:hover {
+    color: #ffffff;
+}
+
+a:hover, 
+#nav-icon:hover {
+    color: white;
+    filter: drop-shadow(0 0 15px white);
+}
+
+/* Estilos da seção principal */
+.main {
+    background-color: rgb(0, 0, 0);
+    height: 46vw;
+    text-align: center;
+}
+
+#terabook {
+    width: 100%;
+    margin-top: 23px;
+}
+
+#title {
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 50px;
+}
+
+#subtitle {
+    font-size: 23px;
+    font-weight: 500;
+    text-align: center;
+    margin-left: 10px;
+}
+
+#containerbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn {
+    background-color: rgb(0, 0, 0);
+    border-radius: 50px;
+    border: 2px solid rgb(73, 0, 133);
+    text-align: center;
+    margin-bottom: 0px;
+    padding: 7px;
+    margin-top: 10px;
+    width: 150px;
+    transition: .3s;
+    font-weight: 600;
+}
+
+#btn:hover {
+    background-color: rgb(73, 0, 133);
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 20px 10px rgba(73, 0, 133, 0.568);
+    -moz-box-shadow: 0px 0px 20px 10px rgba(73, 0, 133, 0.486);
+    box-shadow: 0px 0px 20px 10px rgba(73, 0, 133, 0.479);
+}
+
+/* Estilos da segunda seção */
+@media(max-width: 840px){
+
+    img#terabook{
+        
+    margin-top: 0;
+    }
+
+    #main2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    aside#terafly {
+        padding-block: 100px;
+        width: 100%;
+        margin-top: 450px;
+        height: 100%;
+    }
+
+    aside#teraglasses {
+        padding-block: 100px;
+        width: 100%;
+        height: 100%;
+    }
+
+    h1#flytitle{
+        margin-top: 10vh;
+    }
+
+    h1#glasstitle {
+        margin-top: 55vh;
+    }
+
+    h1#formH1{
+        padding-top: 116vh;
+    }
+
+    div.inputs1{
+        flex-direction: column;
+        width: 70vw;
+        gap: 0px;
+    }
+
+    div.inputs2{
+        width: 70vw;
+    }
+
+    #txtarea{
+        width: 70vw;
+    }
+
+    h2#formH2{
+        width: 70vw;
+        margin-left: 15vw;
+    }
+}
+
+@media(max-width: 420px){
+    h1#glasstitle {
+        margin-top: 40vh;
+    }
+}
+
+#main2 {
+    display: flex;
+    width: 100%;
+    height: 600px;
+}
+
+#teraglasses,
+#terafly {
+    width: 50vw;
+    height: 600px;
+    background-color: #ffffff;
+    background-size: cover;
+    background-position: center;
+}
+
+#teraglasses {
+    background-image: url(TeraGlasses.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-position: center;
+}
+
+#terafly {
+    background-image: url(TeraFly.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-position: center;
+}
+
+#flytitle {
+    color: #ffffff;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: 40vh;
+    line-height: 0px;
+}
+
+#flysubtitle {
+    color: #ffffff;
+    font-family: Poppins;
+    font-weight: 450;
+    font-size: 18px;
+    margin-top: 30px;
+    line-height: 15px;
+    margin-left: 18px;
+}
+
+#btn2 {
+    background-color: rgb(0, 0, 0);
+    border-radius: 50px;
+    border: 2px solid #ffffff;
+    text-align: center;
+    margin-bottom: 28px;
+    padding: 7px;
+    margin-top: 23px;
+    width: 150px;
+    transition: .3s;
+    font-weight: 600;
+}
+
+#btn2:hover {
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 20px 10px #ffffff9f;
+    -moz-box-shadow: 0px 0px 20px 10px #ffffff9d;
+    box-shadow: 0px 0px 20px 10px #ffffffa9;
+}
+
+#glasstitle {
+    color: #ffffff;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: 68vh;
+    line-height: 0px;
+}
+
+#glasssubtitle {
+    color: #ffffff;
+    font-family: Poppins;
+    font-weight: 450;
+    font-size: 18px;
+    margin-top: 30px;
+    line-height: 15px;
+    margin-left: 12px;
+}
+
+#btn3 {
+    background-color: rgb(0, 0, 0);
+    border-radius: 50px;
+    border: 2px solid #0081FB;
+    text-align: center;
+    margin-bottom: 28px;
+    padding: 7px;
+    margin-top: 23px;
+    width: 150px;
+    transition: .3s;
+    font-weight: 600;
+}
+
+#btn3:hover {
+    background-color: #0081FB;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 20px 10px #0082fb91;
+    -moz-box-shadow: 0px 0px 20px 10px #0082fb91;
+    box-shadow: 0px 0px 20px 10px #0082fb91;
+}
+
+section.form {
+    display: block;
+    padding-bottom: 80px 4%;
+    justify-content: center;
+    display: inline;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#formH1 {
+    font-size: 23px;
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 10px;
+}
+
+#formH2 {
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+
+.inputs1 {
+    display: flex;
+    gap: 10px;
+}
+
+form input,
+form textarea {
+    border: none;
+    border-radius: 10px;
+    outline: 0;
+    padding: 10px;
+    font-size: 13px;
+    margin-bottom: 10px;
+    color: #000000;
+    background-color: #202020;
+}
+
+form textarea {
+    resize: none;
+    width: 556px;
+    max-height: 200px;
+    
+}
+
+form .btn-enviar input {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 50px;
+    border: 2px solid #2bc9c1;
+    text-align: center;
+    margin-bottom: 28px;
+    padding: 7px;
+    margin-top: 23px;
+    width: 150px;
+    transition: .3s;
+    font-weight: 600;
+}
+
+form .btn-enviar input:hover {
+    background-color: #2bc9c1;
+    color: #000000;
+    -webkit-box-shadow: 0px 0px 20px 10px #2bc9c173;
+    -moz-box-shadow: 0px 0px 20px 10px #2bc9c170;
+    box-shadow: 0px 0px 20px 10px #2bc9c165;
+}
+
+.copyright {
+    color: #272727;
+    padding-bottom: 10px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+footer {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+
+#social a {
+    color: #cecece;
+    font-size: 30px;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 50px;
+    background: transparent;
+    display: inline-block;
+    transition: 0.3s;
+    margin: 5px 20px 30px 20px;
+}
+
+#social a:hover {
+    color: #ffffff;
+    filter: drop-shadow(0 0 20px white);
+}
+
+#containerSocials{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-inline: auto;
+}

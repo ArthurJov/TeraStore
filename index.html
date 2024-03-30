@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tera</title>
+    <!-- Links para os arquivos CSS e font-awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Ícone da aba do navegador -->
+    <link rel="shortcut icon" href="LogoT.png" title="ByteLand" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body style="background-color: black;">
+
+    <!-- Cabeçalho -->
+    <header class="nav-list">
+        <a href="#"><i class="fa-solid fa-tenge-sign" id="icon"></i></a>
+        <input type="checkbox" name="" id="sidebar-active">
+        <label for="sidebar-active" class="open-sidebar-button">
+            <i id="nav-icon" class="fa-solid fa-bars"></i>
+        </label>
+
+        <div class="links-container">
+            
+            <nav class="nav">
+                <ul>
+                    <label for="sidebar-active" class="close-sidebar-button">
+                        <i id="nav-icon" class="fa-solid fa-xmark"></i>
+                    </label>
+                    <li><a class="navtxt" href="#">Home</a></li>
+                    <li><a class="navtxt" href="#">Sobre</a></li>
+                    <li><a class="navtxt" href="#">Contato</a></li>
+                    <li><a class="navtxt" href="#">Adm</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div id="other-icons">
+            <a class="navtxt" href="#"><i class="fa-solid fa-magnifying-glass" id="lupa"></i></a>
+            <a class="navtxt" href="#"><i class="fa-solid fa-cart-shopping" id="lupa"></i></a>
+        </div>
+    </header>
+
+    <!-- Seção principal -->
+    <div class="main">
+        <h1 id="title">TeraBook 0</h1>
+        <h2 id="subtitle">O Mais Brabo<img src="Fire.gif" id="fire" alt=""></h2>
+        <div id="containerbtn">
+            <input id="btn" type="button" value="Comprar!">
+        </div>
+        <picture>
+            <source media="(max-width: 840px)" srcset="PczaoSquare.jpg">
+            <img id="terabook" src="Pczao.jpg" alt="">
+        </picture>
+        
+    </div>
+
+    <!-- Segunda seção -->
+    <div id="main2">
+        <aside id="terafly">
+            <h1 id="flytitle">TeraFly</h1>
+            <h2 id="flysubtitle">Chegue onde quiser 🎮🪽</h2>
+            <input id="btn2" type="button" value="Comprar!">
+        </aside>
+        <aside id="teraglasses">
+            <h1 id="glasstitle">TeraGlasses</h1>
+            <h2 id="glasssubtitle">Veja o outro lado 👀</h2>
+            <input id="btn3" type="button" value="Comprar!">
+        </aside>
+    </div>
+
+    <!-- Formulário -->
+    <section class="form">
+        <div class="interface">
+            <h1 id="formH1">CONTATE-NOS!</h1>
+            <h2 id="formH2">Entre em contato para que possamos sanar suas dúvidas!</h2>
+            <form action="">
+                <div class="inputs1">
+                    <input type="text" name="" id="" placeholder="Seu nome completo:" required>
+                    <input type="text" name="" id="" placeholder="Seu e-mail:" required>
+                    <input type="text" name="" id="" placeholder="Seu celular:">
+                </div>
+
+                <div class="inputs2">
+                    <textarea name="" id="txtarea" cols="30" rows="10" placeholder="Sua mensagem:"></textarea required>
+                </div>
+
+                <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+            <div id="social">
+            <a href="https://www.instagram.com/arthurjov/" class="fab fa-instagram" id="insta"
+                title="@arthurjov"></a>
+            <a href="https://github.com/ArthurJov" class="fab fa-github" id="git" title="Arthur Vieira"></a>
+            <a href="https://www.linkedin.com/in/arthur-vieira-b1061b271/" id="linkedin" class="fab fa-linkedin"
+                title="Arthur Vieira"></a>
+            </div>
+        
+        <p class="copyright">By: ArthurJov <br>2024</p>
+    </footer>
+</body>
+
+</html>
